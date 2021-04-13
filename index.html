@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>این یک آزمایش است</title>
+  <style>
+    html, body
+    {
+        width: 100%;
+        height: 100%;
+        
+        margin: 0;
+        padding: 0;
+    }
+
+    #all{
+      display:flex;
+      flex-direction:column;
+      width: 100%;
+      height: 100%;
+      justify-content: flex-start;
+      align-items: stretch;
+      align-content: stretch;
+      background: rgba(255, 255, 255, .1);
+      
+    }
+    #allcontents{
+      display:flex;
+      flex-flow:row;
+      justify-content: flex-start;
+      align-items: stretch; 
+      align-content: stretch;
+      flex: 10;
+    }
+    #a1{
+      display:flex;
+      flex-grow:2;
+      flex-direction:column;
+      background-color:magenta;
+      justify-content: flex-start; /* align items in Main Axis */
+      align-items: stretch; /* align items in Cross Axis */
+      align-content: stretch; /* Extra space in Cross Axis */
+      flex:2;
+      padding:10px 10px;
+
+    }
+    #a2{
+      display:flex;
+      flex-grow:1;
+      background-color:#D5B056;
+      justify-content: flex-start; /* align items in Main Axis */
+      align-items: stretch; /* align items in Cross Axis */
+      align-content: stretch; /* Extra space in Cross Axis */
+      flex:1;
+
+    }
+    #b1{
+      display:flex;
+      background-color:yellow;
+      justify-content: flex-start; /* align items in Main Axis */
+      align-items: stretch;
+      align-content: stretch;
+      flex-grow:1;
+    }
+    #b2{
+      display:flex;
+      background-color:blue;
+      justify-content: flex-start; /* align items in Main Axis */
+      align-items: stretch;
+      align-content: stretch;
+      flex-grow:1;
+      flex-direction:row;
+      padding:10px 10px;
+    }
+    #b3{
+      display:flex;
+      background-color:yellow;
+      justify-content: flex-start; /* align items in Main Axis */
+      align-items: stretch;
+      align-content: stretch;
+      flex-grow:1;
+    }
+    #v1{
+      display:flex;
+      background-color:white;
+      justify-content: flex-start; /* align items in Main Axis */
+      align-items: stretch;
+      align-content: stretch;
+      flex-grow:1;
+      margin-top:30px;
+      margin-bottom:30px;
+    }
+    #v2{
+      display:flex;
+      background-color:#ADD8E6;
+      justify-content: flex-start; /* align items in Main Axis */
+      align-items: stretch;
+      align-content: stretch;
+      flex-grow:1;
+      margin-top:25px;
+    }
+    #v3{
+      display:flex;
+      background-color:green;
+      justify-content: flex-start; /* align items in Main Axis */
+      align-items: stretch;
+      align-content: stretch;
+      flex-grow:1;
+      margin-bottom:40px;
+    }
+
+  </style>
+</head>
+<body>
+<div id="all">
+  <div id="allcontents">
+    <div id="a1">
+      <div id="b1"></div>
+      <div id="b2">
+        <div id="v1">
+          v1
+        </div>
+        <div id="v2">
+          v2
+        </div>
+        <div id="v3">
+          v3
+        </div>
+      </div>
+      <div id="b3"></div>
+    </div>
+    <div id="a2">
+      
+    </div>
+  </div>
+</div>
+</body>
+</html> 
